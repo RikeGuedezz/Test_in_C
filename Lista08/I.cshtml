@@ -1,0 +1,35 @@
+﻿/*
+Crie um programa que exiba todos os números primos entre 1 e 100.
+ */
+using System;
+
+namespace I
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+			for (int i = 2; i <= 100; i++ ){
+				bool p = true;
+				for( int j = 2; j <= Math.Sqrt(i); j++ ){
+					if( i % j == 0 ){
+						p = false;
+						break;
+					}
+				}
+				if(p){
+					Console.Write(i);
+					Console.Write(",");
+				}
+			}
+			
+			
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}

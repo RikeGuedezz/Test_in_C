@@ -1,0 +1,32 @@
+﻿using System;
+
+namespace Atv0J
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			/*Escreva um programa que solicite ao usuário um número inteiro e verifique
+				se ele é maior do que 10 OU menor do que 0. Se o número for maior do que
+					10 OU menor do que 0, o programa deve imprimir a mensagem "Número
+						inválido!".*/
+			
+			//Var
+			int n1;
+			
+			//Entrada
+			Console.WriteLine("Digite 1 Numero ");
+			n1 = int.Parse(Console.ReadLine());
+			
+			//Calculo
+			if ( n1 > 10 || n1 < 0 )
+			{
+				Console.WriteLine("Numero Invalido!");
+			}
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}

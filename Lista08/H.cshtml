@@ -1,0 +1,30 @@
+﻿/*
+ Desenvolva um programa que solicite ao usuário para inserir um número
+inteiro positivo e, em seguida, exiba todos os divisores desse número.
+ */
+using System;
+
+namespace H
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			int n1;
+			int n2 = 0;
+				
+			Console.WriteLine("Digite um numero");
+			n1 = int.Parse(Console.ReadLine());
+			
+			for ( int i = 1; i <= n1; i++){
+				if ( n1 % i ==0 ){
+					Console.WriteLine(i);
+				}
+			}
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}

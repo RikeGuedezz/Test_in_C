@@ -1,0 +1,47 @@
+﻿using System;
+
+namespace D
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			/*Desenvolva um programa que solicite ao usuário para inserir uma senha e,
+				em seguida, permita que o usuário tente inserir a senha até três vezes. Caso o
+					usuário acerte a senha, exiba uma mensagem de sucesso. Caso contrário,
+						exiba uma mensagem informando que a senha está incorreta.*/
+			
+			int erro = 3;
+			string senha = "senhasenha";
+			string senha2; 
+				
+			while (erro > 0)
+			{
+				Console.WriteLine("Digite a sua senha");
+				senha2 = Console.ReadLine();
+
+				if (senha == senha2)
+				{
+					Console.WriteLine("Senha Inserida com Sucesso!");
+					break;
+				}
+				else
+					{
+						erro--;
+						Console.WriteLine("Senha Negada!");
+					}
+				
+			}
+			
+			Console.WriteLine();
+			
+			if (erro == 0){
+				Console.WriteLine("Nao e possivel mais Tentativas");
+			}
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}

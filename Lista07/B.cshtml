@@ -1,0 +1,29 @@
+﻿using System;
+{
+ class Program
+ {
+  public static void Main(string[] args)
+  {
+   /*Desenvolva um programa que solicite ao usuário para inserir um número
+    inteiro e, em seguida, exiba a tabuada desse número até o número 10.*/
+   
+   int n1;
+   
+   Console.WriteLine("Digite um numero inteiro de 1 ate 10");
+   n1 = int.Parse(Console.ReadLine());
+   
+   int i  = 1;
+   int j;
+   
+   while ( i <= 10)
+   { 
+   	j=n1*i;
+    Console.WriteLine("A multiplicação de {0} x {1} = {2}", n1,i, j);
+    i+=2;
+    
+   }
+   Console.Write("Press any key to continue . . . ");
+   Console.ReadKey(true);
+  }
+ }
+}

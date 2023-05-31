@@ -1,0 +1,38 @@
+﻿/*
+Crie um programa que solicite ao usuário para inserir um número inteiro e,
+em seguida, exiba se esse número é primo ou não.
+ */
+using System;
+
+namespace E
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			int n1;
+			bool p = true;			
+			
+			Console.WriteLine("Digita um numero");
+			n1 = int.Parse(Console.ReadLine());
+			
+			for( int i = 2; i <=Math.Sqrt(n1); i++ ){
+				if( n1 % i == 0 ){
+					p = false;
+					break;
+				}
+			}
+			
+			if( p ){
+				Console.WriteLine("Numero Primo {0}.",n1);
+			}
+			else{
+				Console.WriteLine("Numero nao e Primo {0}.",n1);
+			}
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}

@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Atv1D
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			/*Crie um programa que verifique se uma data é um feriado nacional.*/
+			
+			DateTime data;
+			
+			List<DateTime> feriados = new List<DateTime>()
+			{
+   			 new DateTime(DateTime.Today.Year, 1, 1),   // Confraternização Universal
+  			 new DateTime(DateTime.Today.Year, 4, 21),  // Tiradentes
+    		 new DateTime(DateTime.Today.Year, 5, 1),   // Dia do Trabalho
+    		 new DateTime(DateTime.Today.Year, 9, 7),   // Independência do Brasil
+    		 new DateTime(DateTime.Today.Year, 10, 12), // Nossa Senhora Aparecida
+    		 new DateTime(DateTime.Today.Year, 11, 2),  // Finados
+    		 new DateTime(DateTime.Today.Year, 11, 15), // Proclamação da República
+    		 new DateTime(DateTime.Today.Year, 12, 25)  // Natal
+			};
+			
+			Console.WriteLine("Digite a Data em formato dd/mm/aaaa");
+			data = DateTime.Parse(Console.ReadLine());
+		
+			if(feriados.Contains(data.Date))
+			{
+				Console.WriteLine("{0} É Feriado Nascional.",data.ToShortDateString());
+			}
+			else
+			{
+				Console.WriteLine("{0} Não e um Feriado Nascional.",data.ToShortDateString());
+			}
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}

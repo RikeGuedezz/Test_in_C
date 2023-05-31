@@ -1,0 +1,36 @@
+﻿using System;
+
+namespace F
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			/*Crie um programa que solicite ao usuário para inserir um número
+ 	*  inteiro positivo e, em seguida, exiba todos os números pares entre 0 e o número inserido.*/
+			
+			
+ int reff = 0;
+ int n1;
+ 
+ Console.WriteLine("Insira um numero");
+ n1 = int.Parse(Console.ReadLine());
+ Console.Clear();
+ 
+ while (reff <= n1)
+  	{
+ 	if(reff % 2==0)
+ 		{
+ 		Console.Write(reff);
+ 		Console.Write(",");
+ 		}
+ 		reff++;
+ 	
+ 	}
+ Console.WriteLine();
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}

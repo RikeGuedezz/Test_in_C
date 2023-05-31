@@ -1,0 +1,41 @@
+﻿/*
+ * Created by SharpDevelop.
+ * User: miuxa
+ * Date: 04/05/2023
+ * Time: 16:40
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+
+namespace E
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+		
+		int n1;
+		int n0 = 0;
+		
+		Console.WriteLine("Digite um numero ");
+		n1 = int.Parse(Console.ReadLine());
+		
+		while (n1 > -1 )
+		{
+			n0 = n0 + n1;
+			
+			Console.WriteLine(n0);
+			
+			Console.WriteLine("Digite um numero ");
+			n1 = int.Parse(Console.ReadLine());
+			
+		}
+		
+		Console.WriteLine(n0);
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}

@@ -1,0 +1,30 @@
+﻿/*
+Desenvolva um programa que solicite ao usuário para inserir um número
+inteiro positivo e, em seguida, exiba a soma de todos os números entre 1 e o
+número inserido.
+ */
+using System;
+
+namespace D
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			int n1; 
+			int n2 = 0;
+			
+			Console.WriteLine("Digite um numero");
+			n1 = int.Parse(Console.ReadLine());
+			
+			for ( int i = 1; i <= n1; i++ ) {
+				n2 += i;
+			}
+			
+			Console.WriteLine("Soma dos numeros {0} = {1} ",n1,n2);
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}

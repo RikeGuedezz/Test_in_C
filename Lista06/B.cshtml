@@ -1,0 +1,37 @@
+﻿using System;
+
+namespace Atv1J
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			/*Crie um programa que permita ao usuário escolher uma das três opções de
+		tamanho de camiseta (P, M ou G) e exiba o preço correspondente, utilizando o switch.*/
+			
+			int op;
+			
+			Console.WriteLine("Escolhe o tamanho o tamanho da camiseta nas opçoes: '1' para P, '2' para M ou '3' para G");
+			op = int.Parse(Console.ReadLine());
+			
+			switch (op)
+			{
+				case 1:
+					Console.WriteLine("Tamanho P escolhido \n Valor R$ 13,40");
+						break;
+				case 2:
+					Console.WriteLine("Tamanho M escolhido \n Valor R$ 13,99");
+						break;
+				case 3:
+					Console.WriteLine("Tamanho G escolhido \n Valor R$ 15,99");
+						break;
+				default:
+						Console.WriteLine("Tamanho não existente");
+						break;
+			}
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}

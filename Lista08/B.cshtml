@@ -1,0 +1,33 @@
+﻿/*
+ Desenvolva um programa que solicite ao usuário para inserir um número
+inteiro positivo e, em seguida, exiba todos os números pares entre 0 e o
+número inserido.
+ */
+using System;
+
+namespace B
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			int n1;
+			
+			Console.WriteLine("Digite um numero");
+			n1 = int.Parse(Console.ReadLine());
+			
+			for ( int i = 0; i <= n1; i+=2 ){
+			
+				if(n1 % 2 == 0){
+				
+					Console.WriteLine(i);
+				
+				}
+			}
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
